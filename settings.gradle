@@ -5,13 +5,11 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
+
+// The dependencyResolutionManagement block is removed.
+// Instead, project-level repositories are typically defined
+// in the project-level build.gradle file.
+// For settings.gradle, this is often enough for modern plugins.
 
 rootProject.name = "LightweightYouTube"
 include ':app'

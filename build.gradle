@@ -3,3 +3,13 @@ plugins {
     id 'com.android.application' version '8.2.2' apply false
     id 'org.jetbrains.kotlin.android' version '1.9.22' apply false
 }
+
+// Add this block if it's missing, or merge if repositories are already there
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        // JitPack can be added here if any dependency needs it, e.g.
+        // maven { url 'https://jitpack.io' }
+    }
+}
