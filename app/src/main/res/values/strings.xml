@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">LightweightTube</string>
+    <string name="title_explore">Explore</string>
+    <string name="title_saved">Saved</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- Explore Fragment -->
+    <string name="search_hint">Search videos...</string>
+    <string name="no_results_found">No results found. Try a different search.</string>
+    <string name="error_loading_videos">Error loading videos. Please try again.</string>
+    <string name="retry">Retry</string>
+
+    <!-- Video Item -->
+    <string name="video_thumbnail_content_description">Video thumbnail</string>
+    <string name="views_format" translatable="false">%,d views</string>
+    <string name="likes_format" translatable="false">%,d</string>
+    <string name="dislikes_format" translatable="false">%,d</string>
+    <string name="upload_date_format" translatable="false">Uploaded %s</string>
+    <string name="show_description">Show description</string>
+    <string name="hide_description">Hide description</string>
+    <string name="comments_label">Comments</string>
+    <string name="no_comments_available">No comments available.</string>
+
+    <!-- Player / Download -->
+    <string name="select_video_quality">Select Video Quality</string>
+    <string name="download_video">Download</string>
+    <string name="play_video">Play</string>
+    <string name="cancel">Cancel</string>
+    <string name="download_started">Download started: %s</string>
+    <string name="download_failed">Download failed for: %s</string>
+    <string name="download_complete">Download complete: %s</string>
+    <string name="error_playing_video">Error playing video.</string>
+    <string name="error_fetching_streams">Could not load video streams. Please try again.</string>
+    <string name="quality_auto">Auto</string>
+
+    <!-- Saved Fragment -->
+    <string name="no_downloaded_videos">No downloaded videos yet.</string>
+    <string name="delete_video_dialog_title">Delete Video?</string>
+    <string name="delete_video_dialog_message">Are you sure you want to delete "%s"? This action cannot be undone.</string>
+    <string name="delete">Delete</string>
+    <string name="error_deleting_video">Error deleting video.</string>
+    <string name="video_deleted_success">Video "%s" deleted.</string>
+
+
+    <!-- Settings -->
+    <string name="invidious_instance_title">Invidious Instance</string>
+    <string name="invidious_instance_summary">Current: %s</string>
+    <string name="invidious_instance_dialog_title">Select Invidious Instance</string>
+    <string name="invidious_instance_custom_url">Enter custom URL</string>
+    <string name="invidious_instance_hint">e.g., https://invidious.io</string>
+    <string name="save">Save</string>
+    <string name="refresh_instances">Refresh List</string>
+    <string name="error_fetching_instances">Error fetching instances.</string>
+    <string name="fetching_instances">Fetching instances...</string>
+    <string name="custom_instance_invalid_url">Invalid URL. Please include http/https.</string>
+    <string name="custom_instance_empty_url">URL cannot be empty.</string>
+
+    <!-- General -->
+    <string name="an_error_occurred">An error occurred</string>
+    <string name="offline_message">You are offline. Please check your connection.</string>
+    <string name="share_video">Share Video</string>
+    <string name="open_in_browser">Open in browser</string>
+
+    <string name="video_details_title">Video Details</string>
+    <string name="error_loading_comments">Error loading comments.</string>
+
+    <!-- Saved Fragment & Download Error/Info -->
+    <string name="error_video_file_missing">Video file not found. It might have been moved or deleted.</string>
+    <string name="remove_broken_entry_title">Remove Broken Entry?</string>
+    <string name="remove_broken_entry_message">The video file for \'%1$s\' seems to be missing or invalid. Remove this entry from the list?</string> <!-- %1$s for video title -->
+    <string name="remove_action">Remove</string>
+    <string name="error_video_id_missing">Video ID is missing.</string>
+
+    <!-- Defaults -->
+    <string name="default_no_title">(No Title)</string>
+    <string name="default_unknown_author">Unknown Author</string>
+</resources>

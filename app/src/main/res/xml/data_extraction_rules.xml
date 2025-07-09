@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Sample data extraction rules file; uncomment and customize as necessary.
+   See https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   for details.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- TODO: Use <include> and <exclude> to control what is backed up.
+        By default, all shared preferences are backed up.
+        Files and databases are NOT backed up by default. -->
+        <include domain="sharedpref" />
+        <exclude domain="sharedpref" path="device_specific_prefs.xml" />
+
+        <!--
+        <include domain="file" path="my_important_data.txt"/>
+        <exclude domain="file" path="temp_files/" />
+        -->
+
+        <!-- Exclude downloaded videos from cloud backup.
+             Adjust the path according to where you store downloads.
+             If downloads are in a specific subdirectory like "downloads/" within filesDir:
+        -->
+        <exclude domain="file" path="downloads/"/>
+        <exclude domain="file" path="image_cache/"/> <!-- Coil cache -->
+
+
+        <!--
+        <include domain="database" path="my_database.db"/>
+        <exclude domain="database" path="temporary_cache.db"/>
+        -->
+    </cloud-backup>
+    <device-transfer>
+        <!-- TODO: Use <include> and <exclude> to control what is transferred.
+        By default, all shared preferences are transferred.
+        Files and databases are NOT transferred by default. -->
+        <include domain="sharedpref" />
+        <!--
+        <include domain="file"/>
+        <include domain="database"/>
+        -->
+        <exclude domain="file" path="downloads/"/>
+        <exclude domain="file" path="image_cache/"/>
+    </device-transfer>
+</data-extraction-rules>

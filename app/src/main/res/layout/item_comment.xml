@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/spacing_medium"
+    android:paddingBottom="@dimen/spacing_medium"
+    android:paddingStart="@dimen/spacing_small"
+    android:paddingEnd="@dimen/spacing_small"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="false">
+
+    <ImageView
+        android:id="@+id/imageViewCommentAuthorThumbnail"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        android:layout_marginTop="2dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="Comment author thumbnail"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/textViewCommentAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceLabelLarge"
+                android:textStyle="bold"
+                tools:text="Comment Author"/>
+            <TextView
+                android:id="@+id/textViewCommentPublished"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:textAppearance="?attr/textAppearanceBodySmall"
+                tools:text="2 days ago"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textViewCommentContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:autoLink="web"
+            android:textColorLink="?attr/colorPrimary"
+            tools:text="This is the comment text. It can be multiple lines long and contain various thoughts, including links like https://example.com that should be clickable."/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:srcCompat="@drawable/ic_like"
+                android:alpha="0.6" />
+            <TextView
+                android:id="@+id/textViewCommentLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:textAppearance="?attr/textAppearanceBodySmall"
+                tools:text="123"/>
+            <!-- Reply button can be added here if replies are implemented
+            <Button
+                android:id="@+id/buttonReply"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:text="Reply"
+                android:textSize="12sp"/>
+            -->
+        </LinearLayout>
+        <!-- TODO: Add RecyclerView for replies if implementing nested comments -->
+    </LinearLayout>
+</LinearLayout>

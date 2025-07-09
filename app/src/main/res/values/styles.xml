@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme is in themes.xml -->
+
+    <!-- ExoPlayer Control Styles -->
+    <!-- You can override ExoPlayer styles here if needed, or define them if not inheriting from a Material theme that includes them.
+         For Material3, many of these are already styled appropriately.
+         This is just a placeholder for potential customizations. -->
+
+    <style name="ExoMediaButton">
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:layout_width">@dimen/player_control_button_size</item>
+        <item name="android:layout_height">@dimen/player_control_button_size</item>
+    </style>
+
+    <style name="ExoMediaButton.Play" parent="ExoMediaButton">
+        <!-- Default icon is already set by ExoPlayer, this is for overriding -->
+        <!-- <item name="android:src">@drawable/your_custom_play_icon</item> -->
+    </style>
+
+    <style name="ExoMediaButton.Pause" parent="ExoMediaButton">
+        <!-- <item name="android:src">@drawable/your_custom_pause_icon</item> -->
+    </style>
+
+    <style name="ExoMediaButton.FastForward" parent="ExoMediaButton">
+        <!-- <item name="android:src">@drawable/your_custom_ffwd_icon</item> -->
+    </style>
+
+    <style name="ExoMediaButton.Rewind" parent="ExoMediaButton">
+        <!-- <item name="android:src">@drawable/your_custom_rew_icon</item> -->
+    </style>
+
+    <style name="ExoMediaButton.Next" parent="ExoMediaButton">
+        <!-- <item name="android:src">@drawable/your_custom_next_icon</item> -->
+    </style>
+
+    <style name="ExoMediaButton.Previous" parent="ExoMediaButton">
+        <!-- <item name="android:src">@drawable/your_custom_prev_icon</item> -->
+    </style>
+
+</resources>

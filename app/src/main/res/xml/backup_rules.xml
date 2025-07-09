@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- TODO Remove the following file path if you want to backup your SharedPreferences -->
+    <exclude domain="sharedpref" path="."/>
+    <!-- Exclude specific shared preferences that contain sensitive data or device-specific IDs -->
+    <!-- <exclude domain="sharedpref" path="device_id.xml"/> -->
+    <!-- <exclude domain="sharedpref" path="user_credentials.xml"/> -->
+
+    <!-- Exclude cache directory -->
+    <exclude domain="file" path="cache"/>
+    <exclude domain="file" path="image_cache"/> <!-- Coil cache -->
+
+
+    <!-- Exclude downloaded videos from backup if they are stored in 'files' dir.
+         If they are large, backing them up might consume a lot of user's cloud storage.
+         Adjust the path according to where you store downloads.
+         If downloads are in a specific subdirectory like "downloads/" within filesDir:
+    -->
+    <exclude domain="file" path="downloads/"/>
+
+
+    <!-- Consider what else to exclude. For example, if Room database stores only
+         cached metadata that can be refetched, you might exclude it.
+         If it stores user-generated data or important state, include it.
+    <exclude domain="database" path="your_database_name.db"/>
+    -->
+</full-backup-content>
